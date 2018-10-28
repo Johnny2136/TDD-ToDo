@@ -1,0 +1,27 @@
+{
+  "name": "simple-todo-app-with-vue",
+  "version": "1.0.0",
+  "description": "A very simple todo app to provide a taste of developing with single-file components.",
+  "keywords": [],
+  "main": "index.js",
+  "test": "jest",
+  "dependencies": {
+    "@vue/test-utils": "1.0.0-beta.25",
+    "babel-jest": "23.6.0",
+    "vue": "2.5.3"
+  },
+
+  "jest": {
+    "moduleNameMapper": {
+      "^vue$": "vue/dist/vue.common.js"
+  },
+  "moduleFileExtensions": [
+    "js",
+    "vue"
+  ],
+  "transform": {
+    "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+    ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+  }
+}
+}
